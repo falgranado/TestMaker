@@ -50,11 +50,11 @@ function timer(time,showTime){
 	    var hours = Math.floor(millis / 36e5),
 	        mins = Math.floor((millis % 36e5) / 6e4),
 	        secs = Math.floor((millis % 6e4) / 1000);
-	        if(showTime == false){
+	       // if(showTime == false){
 	        	$('#timer').text(hours+':'+mins+':'+secs);
-	        }else{
-	        	
-	        }  
+	        //}else{
+
+	       // }  
 	}
 
 	setInterval(function(){
