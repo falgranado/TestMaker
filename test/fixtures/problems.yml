@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  difficulty: 1
+  solution: MyString
+  process: MyString
+  book_isbn: MyString
+  page: 1
+  exercise_number: 1
+
+two:
+  description: MyText
+  difficulty: 1
+  solution: MyString
+  process: MyString
+  book_isbn: MyString
+  page: 1
+  exercise_number: 1

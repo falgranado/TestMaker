@@ -1,0 +1,41 @@
+<%= form_for @problem do |f| %>
+  <div class="form-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <%= f.text_area :description, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :difficulty, :class => 'control-label' %>
+    <%= f.number_field :difficulty, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :solution, :class => 'control-label' %>
+    <%= f.text_field :solution, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :process, :class => 'control-label' %>
+    <%= f.text_field :process, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :book_isbn, :class => 'control-label' %>
+    <%= f.text_field :book_isbn, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :page, :class => 'control-label' %>
+    <%= f.number_field :page, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :exercise_number, :class => 'control-label' %>
+    <%= f.number_field :exercise_number, :class => 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :topic_id, :class => 'control-label' %>
+    <%= f.number_field :topic_id, :class => 'form-control' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                problems_path, :class => 'btn' %>
+  </div>
+<% end %>
